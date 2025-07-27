@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo"><b>E-Learning</b></div>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="active">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Section -->
+    <div class="main-content">
+      
+      <!-- Top Bar -->
+      <header class="topbar">
+        <h2>Welcome, Admin!</h2>
+        <button class="logout-btn">Logout</button>
+      </header>
+
+      <!-- Dashboard Title -->
+      <h2 class="section-title">Dashboard Overview</h2>
+
+      <!-- Summary Cards -->
+      <section class="summary-cards">
+        <div class="card">
+          <h3>Total Courses</h3>
+          <p>24</p>
+        </div>
+        <div class="card">
+          <h3>Total Students</h3>
+          <p>1280</p>
+        </div>
+        <div class="card">
+          <h3>Active Instructors</h3>
+          <p>18</p>
+        </div>
+        <div class="card highlight">
+          <h3>New Signups This Week</h3>
+          <p>56</p>
+        </div>
+      </section>
+
+      <!-- Latest Courses Table -->
+      <section class="courses-table">
+        <h2 class="section-title">Latest Courses</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Course Title</th>
+              <th>Instructor</th>
+              <th>Enrolled</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Intro to AI</td>
+              <td>Dr. Zainab</td>
+              <td>280</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>Mr. Kareem</td>
+              <td>450</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Data Structures</td>
+              <td>Ms. Leena</td>
+              <td>310</td>
+              <td><span class="status archived">Archived</span></td>
+            </tr>
+            <tr>
+              <td>Machine Learning</td>
+              <td>Dr. Nasser</td>
+              <td>120</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Cybersecurity Basics</td>
+              <td>Mr. Ahmad</td>
+              <td>150</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>

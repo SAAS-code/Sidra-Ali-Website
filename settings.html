@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Settings - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">E-Learning</div>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <h1>Settings</h1>
+        <button class="logout-btn">Logout</button>
+      </header>
+
+      <!-- Settings Form -->
+      <section class="courses-table">
+        <h2>Admin Preferences</h2>
+        <form style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+          <div style="margin-bottom: 20px;">
+            <label for="admin-name" style="display: block; font-weight: 600;">Admin Name</label>
+            <input type="text" id="admin-name" placeholder="Enter your name" style="padding: 10px; width: 100%; border-radius: 8px; border: 1px solid #ccc;" />
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="email" style="display: block; font-weight: 600;">Email Address</label>
+            <input type="email" id="email" placeholder="admin@example.com" style="padding: 10px; width: 100%; border-radius: 8px; border: 1px solid #ccc;" />
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="password" style="display: block; font-weight: 600;">Password</label>
+            <input type="password" id="password" placeholder="********" style="padding: 10px; width: 100%; border-radius: 8px; border: 1px solid #ccc;" />
+          </div>
+
+          <button type="submit" class="logout-btn">Save Changes</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Users - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">E-Learning</div>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="users.html" class="active">Users</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <h1>Manage Users</h1>
+        <button class="logout-btn">Logout</button>
+      </header>
+
+      <!-- User Table -->
+      <section class="courses-table">
+        <h2>Registered Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ali Saif</td>
+              <td>ali.saif@example.com</td>
+              <td>Admin</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Zainab Ahmed</td>
+              <td>zainab.ahmed@example.com</td>
+              <td>Instructor</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Mohamed Saleh</td>
+              <td>mohamed.saleh@example.com</td>
+              <td>Student</td>
+              <td><span class="status archived">Inactive</span></td>
+            </tr>
+            <tr>
+              <td>Layla Noor</td>
+              <td>layla.noor@example.com</td>
+              <td>Student</td>
+              <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+              <td>John Smith</td>
+              <td>john.smith@example.com</td>
+              <td>Student</td>
+              <td><span class="status archived">Inactive</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

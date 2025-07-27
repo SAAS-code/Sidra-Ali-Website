@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Courses - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">E-Learning</div>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="topbar">
+        <h1>Courses</h1>
+        <button class="logout-btn">Logout</button>
+      </header>
+
+      <section class="content-section">
+        <h2>Manage Courses</h2>
+        <p>Here you can view, edit, or remove existing courses.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Course Title</th>
+              <th>Instructor</th>
+              <th>Students</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Intro to AI</td>
+              <td>Dr. Zainab</td>
+              <td>280</td>
+              <td><span class="status active">Active</span></td>
+              <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+            </tr>
+            <td>Web Development</td>
+              <td>Mr. Karim</td>
+              <td>450</td>
+              <td><span class="status active">Active</span></td>
+              <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Data Structure</td>
+              <td>Ms. Leena</td>
+              <td>310</td>
+              <td><span class="status archived">Archived</span></td>
+              <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+            </tr>
+            <td>Machine Learning</td>
+              <td>Dr. Nasser</td>
+              <td>120</td>
+              <td><span class="status active">Active</span></td>
+              <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+            </tr>
+            <td>Cybersecurity Basics</td>
+              <td>Mr. Ahmed</td>
+              <td>150</td>
+              <td><span class="status active">Active</span></td>
+              <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
